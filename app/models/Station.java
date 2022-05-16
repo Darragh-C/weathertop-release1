@@ -16,7 +16,6 @@ public class Station extends Model
     @OneToMany(cascade = CascadeType.ALL)
     public List<Reading> readings = new ArrayList<Reading>();
 
-    public St
 
     public Station(String name)
     {

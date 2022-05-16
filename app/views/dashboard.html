@@ -12,3 +12,11 @@
     #{displayreadings station:station/}
   </section>
 #{/list}
+
+<form class="ui stacked segment form" action="/dashboard/addstation" method="POST">
+  <div class="field">
+    <label>Add station</label>
+    <input placeholder="Name" type="text" name="name">
+  </div>
+  <button class="ui blue submit button">Add station</button>
+</form>
