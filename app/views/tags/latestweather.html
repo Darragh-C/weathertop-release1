@@ -1,0 +1,48 @@
+<div class="ui centered equal width grid">
+    <div class="row">
+        <div class="column">
+            <div class="ui segment">
+                <h3>${_station.name}</h3>
+                <br>
+                <br>
+            </div>
+        </div>
+        #{list items:_station.readings[-1], as:'reading'}
+            <div class="column">
+                <div class="ui segment">
+                    <h3>Weather</h3>
+                    <br>
+                    <br>
+                    ${reading.weatherCondition()}
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    <h3>Temp</h3>
+                    <br>
+                    ${reading.temperature} C
+                    <br>
+                    ${reading.celsiusToFahrenheit()} F
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    <h3>Wind</h3>
+                    ${reading.beaufortSelector()} bft
+                    <br>
+                    ${reading.windDirection()}
+                    <br>
+                    Feels like: ${reading.windChillCalc().round(2)}
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    <h3>Pressure</h3>
+                    <br>
+                    <br>
+                    ${reading.pressure} hPa
+                </div>
+            </div>
+        #{/list}
+    </div>
+</div>
