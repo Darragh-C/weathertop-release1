@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5721defb-4bea-49e6-84da-3a34ded3cff4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/models/PlaylistCtrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tags/addreading.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tags/addstation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_addstation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/PlaylistCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/StationCtrl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tags/displayreadings.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/displayreadings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/addreading.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/addreading.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_displayreadings.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_displayreadings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Dashboard" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Dashboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-top-1-1.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top-1-1.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-top-1-1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top-1-1.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +57,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="controllers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="debug station" type="Remote">
       <module name="weather-top-1-1" />
@@ -97,7 +98,7 @@
       <workItem from="1652693326065" duration="1875000" />
       <workItem from="1652712113547" duration="107000" />
       <workItem from="1652718538775" duration="2449000" />
-      <workItem from="1652757956557" duration="2128000" />
+      <workItem from="1652757956557" duration="4133000" />
     </task>
     <servers />
   </component>
