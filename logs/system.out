@@ -1,0 +1,660 @@
+Listening for transport dt_socket at address: 8000
+07:28:55,412 INFO  ~ Starting /Users/darragh/repos/weather-top-release-1
+07:28:55,449 WARN  ~ You're running Play! in DEV mode
+07:28:55,551 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+~ Server is up and running
+07:29:06,046 INFO  ~ HikariPool-1 - Starting...
+07:29:06,074 INFO  ~ HikariPool-1 - Start completed.
+07:29:06,101 INFO  ~ Connected to jdbc:h2:mem:play for default
+07:29:07,079 INFO  ~ Application 'weather-top-release-1' is now started !
+07:29:10,932 INFO  ~ Rendering Start
+07:29:28,650 INFO  ~ Rendering about
+07:29:32,708 INFO  ~ Rendering Dashboard
+07:29:55,867 ERROR ~ 
+
+@7nkd39ajc
+stations.6 action not found
+
+Action not found
+Action stations.6 could not be found. Error raised is Controller controllers.stations not found
+
+play.exceptions.ActionNotFoundException: Action stations.6 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:588)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:74)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.stations not found
+	... 3 more
+07:37:32,921 INFO  ~ Rendering Start
+07:37:34,277 INFO  ~ Rendering Dashboard
+07:37:44,545 INFO  ~ Adding a new station called Kinsale
+07:37:44,568 INFO  ~ Rendering Dashboard
+07:38:06,343 ERROR ~ 
+
+@7nkd39ajd
+stations.8 action not found
+
+Action not found
+Action stations.8 could not be found. Error raised is Controller controllers.stations not found
+
+play.exceptions.ActionNotFoundException: Action stations.8 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:588)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:74)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.stations not found
+	... 3 more
+07:40:23,480 INFO  ~ Rendering Start
+07:40:24,338 INFO  ~ Rendering Dashboard
+07:40:50,791 ERROR ~ 
+
+@7nkd39aje
+stations.8 action not found
+
+Action not found
+Action stations.8 could not be found. Error raised is Controller controllers.stations not found
+
+play.exceptions.ActionNotFoundException: Action stations.8 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:588)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:74)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.stations not found
+	... 3 more
+08:04:53,564 WARN  ~ HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m47s188ms).
+08:08:29,594 WARN  ~ HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m36s32ms).
+08:17:04,291 ERROR ~ 
+
+@7nkd39ajf
+stations.5 action not found
+
+Action not found
+Action stations.5 could not be found. Error raised is Controller controllers.stations not found
+
+play.exceptions.ActionNotFoundException: Action stations.5 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:588)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:74)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.stations not found
+	... 3 more
+08:37:09,246 INFO  ~ Restart: 1 classes changed, caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to add a method
+08:37:09,889 ERROR ~ 
+
+@7nkd39ajg
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occurred : Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.jobs.Job.call(Job.java:241)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:37:10,320 ERROR ~ 
+
+@7nkd39ajh
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+Unexpected error : Unexpected Error, caused by exception RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:180)
+	at play.jobs.Job.call(Job.java:250)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:37:27,099 ERROR ~ 
+
+@7nkd39aji
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occurred : Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.jobs.Job.call(Job.java:241)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:37:27,119 ERROR ~ 
+
+@7nkd39ajj
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+Unexpected error : Unexpected Error, caused by exception RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:180)
+	at play.jobs.Job.call(Job.java:250)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:37:38,610 ERROR ~ 
+
+@7nkd39ajk
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occurred : Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.jobs.Job.call(Job.java:241)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:37:38,633 ERROR ~ 
+
+@7nkd39ajl
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+Unexpected error : Unexpected Error, caused by exception RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:180)
+	at play.jobs.Job.call(Job.java:250)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:37:42,748 ERROR ~ 
+
+@7nkd39ajm
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occurred : Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.jobs.Job.call(Job.java:241)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:37:42,764 ERROR ~ 
+
+@7nkd39ajn
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+Unexpected error : Unexpected Error, caused by exception RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:180)
+	at play.jobs.Job.call(Job.java:250)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:39:19,715 ERROR ~ 
+
+@7nkd39ajo
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occurred : Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.jobs.Job.call(Job.java:241)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:39:19,731 ERROR ~ 
+
+@7nkd39ajp
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+Unexpected error : Unexpected Error, caused by exception RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:180)
+	at play.jobs.Job.call(Job.java:250)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:40:00,089 ERROR ~ 
+
+@7nkd39ak0
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occurred : Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.jobs.Job.call(Job.java:241)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:40:00,106 ERROR ~ 
+
+@7nkd39ak1
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+Unexpected error : Unexpected Error, caused by exception RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:180)
+	at play.jobs.Job.call(Job.java:250)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:40:02,971 ERROR ~ 
+
+@7nkd39ak2
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occurred : Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.jobs.Job.call(Job.java:241)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:40:02,987 ERROR ~ 
+
+@7nkd39ak3
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+Unexpected error : Unexpected Error, caused by exception RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:180)
+	at play.jobs.Job.call(Job.java:250)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:41:09,900 ERROR ~ 
+
+@7nkd39ak4
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occurred : Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.jobs.Job.call(Job.java:241)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:41:09,917 ERROR ~ 
+
+@7nkd39ak5
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+Unexpected error : Unexpected Error, caused by exception RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:180)
+	at play.jobs.Job.call(Job.java:250)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:42:11,893 ERROR ~ 
+
+@7nkd39ak6
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occurred : Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.jobs.Job.call(Job.java:241)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:42:11,917 ERROR ~ 
+
+@7nkd39ak7
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+Unexpected error : Unexpected Error, caused by exception RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:180)
+	at play.jobs.Job.call(Job.java:250)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:43:50,302 ERROR ~ 
+
+@7nkd39ak8
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occurred : Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.jobs.Job.call(Job.java:241)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:43:50,720 ERROR ~ 
+
+@7nkd39ak9
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+Unexpected error : Unexpected Error, caused by exception RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:180)
+	at play.jobs.Job.call(Job.java:250)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:43:58,248 ERROR ~ 
+
+@7nkd39aka
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 14)
+RuntimeException occurred : Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.JavaExecutionException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.jobs.Job.call(Job.java:241)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
+08:43:58,262 ERROR ~ 
+
+@7nkd39akb
+Internal Server Error (500) for request GET /
+
+Oops: RuntimeException
+Unexpected error : Unexpected Error, caused by exception RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.Job.onException(Job.java:180)
+	at play.jobs.Job.call(Job.java:250)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml[type=models.Reading,id=r1]: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:301)
+	at play.test.Fixtures.loadModels(Fixtures.java:192)
+	at Bootstrap.doJob(Bootstrap.java:14)
+	at play.jobs.Job.doJobWithResult(Job.java:64)
+	at play.jobs.Job$2.apply(Job.java:224)
+	at play.db.jpa.JPA.withTransaction(JPA.java:285)
+	at play.db.jpa.JPA.withinFilter(JPA.java:238)
+	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:306)
+	at play.jobs.Job.withinFilter(Job.java:201)
+	at play.jobs.Job.call(Job.java:220)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data.yml, duplicate id 'r1' for type models.Reading
+	at play.test.Fixtures.loadModels(Fixtures.java:248)
+	... 10 more
